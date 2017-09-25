@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/action_bar_old"></include>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/blue"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.szw.framelibrary.view.DrawableCenterButton
+            android:id="@+id/rb1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableEnd="@drawable/buy_jiantou"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:text="@string/ZongAndSorting"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+
+        <com.szw.framelibrary.view.DrawableCenterButton
+            android:id="@+id/rb2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableEnd="@drawable/buy_jiantou"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:text="@string/Sortord"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+
+        <com.szw.framelibrary.view.DrawableCenterButton
+            android:id="@+id/rb3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableEnd="@drawable/buy_filter"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="@string/Filter"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </RadioGroup>
+
+    <include layout="@layout/refresh_recycler"></include>
+
+</LinearLayout>

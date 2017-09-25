@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.exz.gametrade.gametrade">
+
+    <application
+        android:name=".appclication.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait" />
+        <!--发布寄售-->
+        <activity
+            android:name=".activity.PostSaleActivity"
+            android:screenOrientation="portrait" />
+        <!--确认订单-->
+        <activity
+            android:name=".activity.ConfirmOrderActivity"
+            android:screenOrientation="portrait" />
+        <!--我的余额-->
+        <activity
+            android:name=".activity.BalanceActivity"
+            android:screenOrientation="portrait" />
+        <!--余额充值-->
+        <activity
+            android:name=".activity.BalancePayActivity"
+            android:screenOrientation="portrait" />
+        <!--申请提现-->
+        <activity
+            android:name=".activity.TiXianActivity"
+            android:screenOrientation="portrait" />
+        <!--我的订单-->
+        <activity
+            android:name=".activity.MyOrderActivity"
+            android:screenOrientation="portrait" />
+        <!--订单详情-->
+        <activity
+            android:name=".activity.OrderDetailActivity"
+            android:screenOrientation="portrait" />
+        <!--支付订单-->
+        <activity
+            android:name=".activity.PayOrderActivity"
+            android:screenOrientation="portrait" />
+        <!--选择游戏-->
+        <activity
+            android:name=".activity.SelectGameActivity"
+            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait" />
+        <!--切换区服-->
+        <activity
+            android:name=".activity.SwitchAreaActivity"
+            android:screenOrientation="portrait" />
+        <!--我的寄售-->
+        <activity
+            android:name=".activity.MyConsignmentActivity"
+            android:screenOrientation="portrait" />
+        <!--余额记录-->
+        <activity
+            android:name=".activity.BalanceRecordActivity"
+            android:screenOrientation="portrait" />
+        <!--设置-->
+        <activity
+            android:name=".activity.SettingActiity"
+            android:screenOrientation="portrait" />
+        <!--切换币种-->
+        <activity
+            android:name=".activity.SwitchMoneyActivity"
+            android:screenOrientation="portrait" />
+        <!--消息列表-->
+        <activity
+            android:name=".activity.MsgListActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

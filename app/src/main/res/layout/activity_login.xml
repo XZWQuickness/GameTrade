@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/testbg"
+    android:orientation="vertical">
+
+    <include layout="@layout/action_bar_tv"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:background="@drawable/shape_white_bg"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="英雄三国"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <com.szw.framelibrary.view.ClearWriteEditText
+            android:id="@+id/edGameName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_white_gray_line"
+           android:hint="@string/inputName"
+            android:padding="@dimen/dp_10"
+            android:textColor="@color/text_gray"
+            android:textColorHint="@color/text_shallow_gray"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="14sp" />
+        <com.szw.framelibrary.view.ClearWriteEditText
+            android:id="@+id/edGamePsd"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_white_gray_line"
+            android:hint="@string/PleaseEnterTheCurrentGameUserPassword"
+            android:padding="@dimen/dp_10"
+            android:textColor="@color/text_gray"
+            android:textColorHint="@color/text_shallow_gray"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="14sp" />
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_15"
+    android:padding="@dimen/dp_10"
+    android:text="@string/LogInTheGame"
+    android:gravity="center"
+    android:textColor="@color/white"
+    android:textSize="14sp"
+    android:id="@+id/LogoIn"
+    android:background="@drawable/shape_blue_bg"
+
+    />
+    </LinearLayout>
+
+
+</RelativeLayout>

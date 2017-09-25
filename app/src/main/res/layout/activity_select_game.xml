@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/action_bar_old"></include>
+
+    <LinearLayout
+        android:id="@+id/llSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:background="@color/white"
+        android:padding="5dp">
+
+        <EditText
+            android:id="@+id/edContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:layout_marginStart="@dimen/dp_10"
+            android:background="@drawable/shape_gray_all"
+            android:drawablePadding="10dp"
+            android:drawableStart="@mipmap/ic_search_game_name"
+            android:hint="@string/SearchGameName"
+            android:paddingBottom="8dp"
+            android:paddingStart="10dp"
+            android:paddingTop="8dp"
+            android:textColor="@color/text_gray"
+            android:textColorHint="@color/text_shallow_gray"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/lin"
+        android:layout_below="@id/llSearch"></View>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/mRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/llSearch" />
+
+    <com.exz.gametrade.gametrade.utils.SideBar
+        android:id="@+id/mSideBar"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/mRecyclerView"
+        android:layout_below="@id/llSearch"
+        android:layout_marginBottom="30dp" />
+
+    <TextView
+        android:id="@+id/dialog"
+        android:layout_width="80.0dip"
+        android:layout_height="80.0dip"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:alpha="0.5"
+        android:background="@drawable/toast_show"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="30.0dip"
+        android:visibility="invisible" />
+</RelativeLayout>
